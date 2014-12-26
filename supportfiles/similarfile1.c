@@ -1,10 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+extern void some_function()
+{
+  printf("MyString");
+  printf("\n");
+}
+
 int main(int argc, char *argv[])
 {
   int z = rand() % 3;
   int i;
+  some_function();
   for (i=0; i < 100; i++) { printf("x"); }
   switch (z) {
 #ifdef EXAMPLE1

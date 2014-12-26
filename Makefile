@@ -6,7 +6,10 @@ SRC=$(TOPDIR)/supportfiles
 CC=gcc
 PROGRAMS= $(OUT)/similar1 $(OUT)/similar2
 
-all: $(PROGRAMS)
+all: forced_things $(PROGRAMS)
+
+forced_things:
+	@echo 'e cfg.fortunes=false' >> ~/.radare2rc
 
 $(OUT)/similar1: $(SRC)/similarfile1.c | temp/
 	$(CC) -Wall -g -O2 -DEXAMPLE1 $(SRC)/similarfile1.c -o $(OUT)/similar1 

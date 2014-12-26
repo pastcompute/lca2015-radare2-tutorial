@@ -40,3 +40,11 @@ Note, you can install as a normal user if you need to:
     cd lca2015-radare2-tutorial
     make -C helpers
 
+## Set a rc file
+
+Radare2 will by default print fortune cookies.
+Please, turn this off, in case there is a possibility of NSFW output...
+
+    echo 'e cfg.fortunes=false' > ~/.radare2rc
+
+
