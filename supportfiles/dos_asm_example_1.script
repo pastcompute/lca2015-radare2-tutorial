@@ -1,0 +1,3 @@
+"wa mov dx,0x20; mov ah,9; int 0x21; mov ah,0x4c; int 0x21"
+s 0x20
+w HelloWorld\x0d\x0a$

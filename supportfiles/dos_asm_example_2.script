@@ -1,0 +1,10 @@
+e asm.arch=x86
+e asm.bits=16
+o+ temp/dos2.com
+o
+"wa mov dx,0x20; mov ah,9; int 0x21; mov ah,0x4c; int 0x21"
+s 0x20
+w HelloWorld\x0d\x0a$
+s 0
+px 48
+wc
