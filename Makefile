@@ -2,7 +2,7 @@
 
 TOPDIR=$(PWD)
 OUT=$(TOPDIR)/temp
-SRC=$(TOPDIR)/supportfiles
+SRC=$(TOPDIR)/examples
 CC=gcc
 PROGRAMS= $(OUT)/similar1 $(OUT)/similar2
 
