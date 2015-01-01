@@ -4,11 +4,11 @@
 
 Minimum required is a C compiler and libraries needed to build radare2, and xdot for viewing callgraphs.
 
-Various other tools may be helpful.
+Various other tools may be helpful, and indeed needed to complete all parts of an exercise
 
 If you are using a Debian-derived distro, for example:
 
-    sudo apt-get install build-essential xdot eog ghex binwalk vim gedit
+    sudo apt-get install build-essential xdot eog ghex binwalk vim gedit srecord
 
 It should be possible to build radare2 on Linux, FreeBSD/NetBSD etc, Max OS/X and Windows
 
