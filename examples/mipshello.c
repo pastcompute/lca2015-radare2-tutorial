@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+extern void heads_or_tails(int c)
+{
+  switch (c) {
+  case 'H' : printf("Heads\n"); break;
+  case 'T' : printf("Tails\n"); break;
+  default:
+    printf("I dont understand!\n");
+  }
+}
+
 int main(int argc, char *argv[])
 {
   int c=0xfeedbeef;
@@ -10,15 +20,9 @@ int main(int argc, char *argv[])
 
   if (argc < 2) return 0;
 
-  c = argv[1][0]
+  c = argv[1][0];
 
-  switch (c) {
-  case 'H' : printf("Heads\n"); break;
-  case 'T' : printf("Tails\n"); break;
-  default:
-    printf("I dont understand!\n");
-  }
-
+  heads_or_tails(c);
 
   m = rand();
 

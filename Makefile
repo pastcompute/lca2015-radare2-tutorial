@@ -14,7 +14,7 @@ MIPSSTRIP=mips-openwrt-linux-strip
 all: forced_things $(PROGRAMS)
 
 keep: forced_things $(PROGRAMS)
-	cp -v temp/similar1 temp/similar2 temp/mipshello solutions/
+	cp -v temp/similar1 temp/similar2 temp/mipshello examples/
 
 forced_things:
 	@echo 'e cfg.fortunes=false' >> ~/.radare2rc
@@ -28,7 +28,7 @@ $(OUT)/similar2: $(SRC)/similarfile1.c | temp/
 	strip $(OUT)/similar2
 
 $(OUT)/mipshello: $(SRC)/mipshello.c | temp/
-	$(MIPSCC) -Wall -march=34kc -mtune=34kc -Os $(SRC)/similarfile1.c -o $(OUT)/mipshello
+	$(MIPSCC) -Wall -march=34kc -mtune=34kc -Os $(SRC)/mipshello.c -o $(OUT)/mipshello
 	$(MIPSSTRIP) $(OUT)/mipshello
 
 temp:
