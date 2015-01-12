@@ -39,8 +39,18 @@ Note, you can install as a normal user if you need to:
 
 ## Build misc example programs
 
+## Create temporary directory
+
     cd lca2015-radare2-tutorial
-    make -C helpers
+    make helpers
+
+## Rebuild example MIPS binaries
+
+Note: this requires an OpenWRT buildroot.
+
+Note: this is NOT required to complete the tutorial, prebuilt binaries are in git.
+
+    make
 
 ## Set an rc file
 

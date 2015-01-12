@@ -13,6 +13,8 @@ MIPSSTRIP=mips-openwrt-linux-strip
 
 all: forced_things $(PROGRAMS)
 
+helpers: forced_things temp/
+
 keep: forced_things $(PROGRAMS)
 	cp -v temp/similar1 temp/similar2 temp/mipshello examples/
 

@@ -3,8 +3,10 @@
 # Create two random binary files almost the same
 #
 
-F1=temp/file1.bin
-F2=temp/file2.bin
+mkdir -p temp
+
+F1=temp/similiar1.bin
+F2=temp/similiar2.bin
 
 if [ -z "$JUST_DIFF" ] ; then
 dd if=/dev/urandom of=$F1 bs=1024 count=1
